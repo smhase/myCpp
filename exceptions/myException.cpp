@@ -12,7 +12,7 @@ public:
 
 class Test {
 public:
-        void goesWrong() throw(){
+        void goesWrong() throw() {
             throw MyException();
         }
 };
@@ -27,4 +27,6 @@ int main(){
     catch(MyException &e){
         cout << e.what() << endl;
     }
+
+    cout << "Still Running" << endl;
 }
